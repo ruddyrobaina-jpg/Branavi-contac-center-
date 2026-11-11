@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRANAVI Connect | Contact Center, BPO &amp; Gestión Integral de Cobranzas</title>
+  <meta name="description" content="BRANAVI Connect (branaviconnect.com): El futuro de las cobranzas es hoy. Contact Center omnicanal, marcador predictivo, Voice Blaster, auditoría con IA y recupero de activos en Montevideo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Barra de progreso sutil superior -->
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+  <!-- Selector flotante para que Dirección compare las 2 propuestas -->
+  <div class="version-switcher-pill" title="Selector de versiones para revisión de Dirección">
+    <span class="v-label">Propuesta V2 (Minimalista Animada)</span>
+    <a href="version_1_clasica.html">Ver Propuesta V1</a>
+  </div>
+
+  <!-- ========================================================================
+       NAVBAR EJECUTIVO LIMPIO Y ESPACIADO
+       ======================================================================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand-identity" aria-label="BRANAVI Connect Inicio">
+        <img src="assets/logo_branavi_blanco.png" alt="BRANAVI Contact Center y Cobranzas" />
+        <div class="brand-tag">
+          <strong>Contact Center &amp; BPO</strong>
+          <span>branaviconnect.com</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#que-hacemos">Soluciones</a>
+        <a href="#tecnologia-ia">Tecnología &amp; IA</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#infraestructura">Infraestructura</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-cta-group">
+        <a href="#contacto" class="btn-magnetic btn-glass" data-select-mode="deudor">
+          Quiero Pagar
+        </a>
+        <a href="#contacto" class="btn-magnetic btn-glow" data-select-mode="empresa">
+          Solicitar Propuesta
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO PRINCIPAL CON MUCHO AIRE Y ELEGANTE
+       ======================================================================== -->
+  <section class="hero-stage" id="inicio">
+    <canvas id="neuralCanvas"></canvas>
+
+    <div class="container hero-grid">
+      <div class="hero-copy-col">
+        <div class="hero-eyebrow-pill">
+          <span class="pulse-dot"></span>
+          BRANAVI Connect • Montevideo, Uruguay
+        </div>
+
+        <h1 class="hero-headline">
+          El futuro de
+          <span class="hero-dynamic-slot"><span class="hero-dynamic-word" id="dynamicHeadline">las cobranzas ES HOY.</span></span>
+        </h1>
+
+        <p class="hero-description">
+          No somos solo un call center ni un estudio tradicional. Combinamos <strong>la escala, la velocidad y la tecnología de un Contact Center</strong> con el respaldo, la firmeza y la estrategia de nuestro <a href="https://estudiobranavi.com" target="_blank" rel="noopener" style="color:var(--brand-accent);border-bottom:1px solid rgba(96,165,250,0.4);">Estudio Jurídico especialista</a>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-magnetic btn-glow btn-xl" data-select-mode="empresa">
+            Contratar Servicios Corporativos
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#que-hacemos" class="btn-magnetic btn-glass btn-xl">
+            Conocer Soluciones
+          </a>
+        </div>
+      </div>
+
+      <div class="command-center-wrap">
+        <div class="command-center-card" id="heroTiltCard">
+          <div class="cc-top-bar">
+            <img src="assets/logo_branavi_blanco.png" alt="BRANAVI Oficial" />
+            <span class="cc-status-label">
+              <span class="pulse-dot"></span>
+              Convención 1343, Piso 9
+            </span>
+          </div>
+
+          <div class="cc-video-showcase">
+            <img id="heroSlideImg" src="assets/oficina_panoramica.jpg" alt="Planta Operativa BRANAVI en Montevideo" />
+            <div class="cc-hud-overlay">
+              <div class="cc-hud-bottom">
+                <strong id="heroSlideTitle">Doble Sala Operativa de Contact Center</strong>
+                <span id="heroSlideTag">Monitoreo en tiempo real y baja rotación de equipos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cc-kpi-duo">
+            <div class="cc-kpi-box">
+              <div class="num"><span>+$352</span> Millones</div>
+              <div class="lbl">Pesos Uruguayos recuperados en 3 años</div>
+            </div>
+            <div class="cc-kpi-box">
+              <div class="num"><span>300%</span> Meta</div>
+              <div class="lbl">Cumplimiento de objetivos (Oct. 2026)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INDICADORES AUDITADOS DEL BROCHURE (BANDA LIMPIA Y DESPEJADA)
+       ======================================================================== -->
+  <section class="counters-section" aria-label="Indicadores Clave BRANAVI">
+    <div class="container">
+      <div class="counters-grid reveal">
+        <div class="counter-card">
+          <div class="counter-value">
+            <span class="prefix">+$</span><span class="js-counter" data-target="352">352</span><span class="suffix">M</span>
+          </div>
+          <div class="counter-title">Pesos Uruguayos</div>
+          <div class="counter-note">Recuperados en 3 años</div>
+        </div>
+
+        <div class="counter-card">
+          <div class="counter-value">
+            <span class="prefix">+</span><span class="js-counter" data-target="250">250</span><span class="suffix"> mil</span>
+          </div>
+          <div class="counter-title">Llamadas Mensuales</div>
+          <div class="counter-note">Marcador predictivo</div>
+        </div>
+
+        <div class="counter-card">
+          <div class="counter-value">
+            <span class="prefix">+</span><span class="js-counter" data-target="200">200</span><span class="suffix"> mil</span>
+          </div>
+          <div class="counter-title">IVR Mensuales</div>
+          <div class="counter-note">Campañas Voice Blaster</div>
+        </div>
+
+        <div class="counter-card">
+          <div class="counter-value">
+            <span class="prefix">SIN LÍMITE</span>
+          </div>
+          <div class="counter-title">Mensajes Mensuales</div>
+          <div class="counter-note">Voz, WhatsApp, SMS y Redes</div>
+        </div>
+
+        <div class="counter-card">
+          <div class="counter-value">
+            <span class="prefix">+</span><span class="js-counter" data-target="30">30</span><span class="suffix"> Agentes</span>
+          </div>
+          <div class="counter-title">Activos en Sala</div>
+          <div class="counter-note">Equipos de baja rotación</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN 1: SOLUCIONES DE CONTACT CENTER & CICLO DE COBRANZAS (6 PILARES)
+       ======================================================================== -->
+  <section class="section" id="que-hacemos">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-tag">Unidades de Negocio</span>
+        <h2 class="section-title">Soluciones de Contact Center y Gestión Integral de Cobranzas</h2>
+        <p class="section-subtitle">
+          Acompañamos todo el ciclo de vida de tu cartera y la relación con tus clientes mediante procesos ordenados, tecnología omnicanal y el respaldo directo de <a href="https://estudiobranavi.com" target="_blank" rel="noopener" style="color:var(--brand-accent);">Estudio Jurídico BRANAVI</a>.
+        </p>
+      </div>
+
+      <div class="ecosystem-switcher reveal" role="tablist">
+        <button type="button" class="eco-tab active" data-eco="all">Todas las Soluciones</button>
+        <button type="button" class="eco-tab" data-eco="cobranzas">Ciclo de Cobranzas</button>
+        <button type="button" class="eco-tab" data-eco="bpo">Contact Center &amp; BPO</button>
+      </div>
+
+      <div class="cards-3d-grid" id="ecosystemGrid">
+        <!-- 1. Mora Preventiva y Temprana -->
+        <article class="tilt-card reveal" data-eco-cat="cobranzas">
+          <span class="card-division-pill">Etapa 01 • Preventiva y Temprana</span>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Mora Preventiva y Temprana (1 a 90 días)</h3>
+          <p>
+            Avisos automáticos pre-vencimiento y gestión telefónica inmediata para disminuir los días de atraso, consolidar el hábito de pago y fidelizar al cliente activo sin fricciones.
+          </p>
+        </article>
+
+        <!-- 2. Mora Tardía y Administración de Carteras -->
+        <article class="tilt-card reveal" data-eco-cat="cobranzas">
+          <span class="card-division-pill">Etapa 02 • +90 a 360 Días</span>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3>Mora Tardía y Recuperación de Carteras</h3>
+          <p>
+            Negociación especializada para créditos complejos o castigados. Aplicamos actualización de datos (skip tracing), reasignación dinámica de operadores y planes de refinanciación.
+          </p>
+        </article>
+
+        <!-- 3. Escalamiento Pre-Judicial y Judicial -->
+        <article class="tilt-card reveal" data-eco-cat="cobranzas">
+          <span class="card-division-pill">Etapa 03 • Respaldo Jurídico</span>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+          </div>
+          <h3>Cobranza Pre-Judicial y Ejecutiva</h3>
+          <p>
+            Transición directa hacia nuestro cuerpo de abogados en <strong>Estudio Jurídico BRANAVI</strong> para intimaciones formales, acuerdos blindados y procesos ejecutivos judiciales.
+          </p>
+        </article>
+
+        <!-- 4. Televentas y Teleagendamiento -->
+        <article class="tilt-card reveal" data-eco-cat="bpo">
+          <span class="card-division-pill">BPO Comercial • Outbound</span>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>Televentas y Teleagendamiento</h3>
+          <p>
+            Equipos comerciales entrenados en la captación de prospectos, colocación de servicios y productos financieros, coordinación de citas comerciales y campañas de fidelización.
+          </p>
+        </article>
+
+        <!-- 5. Atención al Cliente Omnicanal -->
+        <article class="tilt-card reveal" data-eco-cat="bpo">
+          <span class="card-division-pill">Customer Care • Inbound</span>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          </div>
+          <h3>Atención al Cliente Omnicanal</h3>
+          <p>
+            Recepción de consultas, soporte y gestión de reclamos integrando Voz, WhatsApp, SMS y redes sociales en un solo ecosistema con trazabilidad completa en tiempo real.
+          </p>
+        </article>
+
+        <!-- 6. Actualización de BBDD, Encuestas y Back Office -->
+        <article class="tilt-card reveal" data-eco-cat="bpo">
+          <span class="card-division-pill">Operaciones • Data &amp; BPO</span>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+          </div>
+          <h3>Actualización de BBDD, Encuestas y Back Office</h3>
+          <p>
+            Depuración y enriquecimiento de bases de datos, encuestas de satisfacción e investigación de mercado, validación documental y procesamiento operativo digital.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN 2: INNOVACIÓN AL SERVICIO & CONSOLA DE AUDITORÍA IA
+       ======================================================================== -->
+  <section class="section section-glass" id="tecnologia-ia">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-tag">Innovación al Servicio</span>
+        <h2 class="section-title">Tecnología Omnicanal y Auditoría con IA</h2>
+        <p class="section-subtitle">
+          Combinamos automatización inteligente 24/7 con motores de inteligencia artificial que transcriben y auditan cada interacción para optimizar los resultados.
+        </p>
+      </div>
+
+      <div class="tech-bento-grid">
+        <!-- 1 Omnicanal -->
+        <article class="tech-module-card reveal">
+          <div class="tech-visual-stage">
+            <span class="tech-stage-badge">Omnicanal</span>
+            <svg viewBox="0 0 300 168" fill="none" stroke="#60a5fa" stroke-width="1.5">
+              <g class="svg-orbit-ring" style="transform-origin:150px 84px"><circle cx="150" cy="84" r="52" stroke-dasharray="3 7" opacity=".6"/>
+                <circle cx="150" cy="32" r="7" fill="#60a5fa" stroke="none"/><circle cx="202" cy="84" r="7" fill="#93c5fd" stroke="none"/><circle cx="150" cy="136" r="7" fill="#2563eb" stroke="none"/><circle cx="98" cy="84" r="7" fill="#ffffff" stroke="none"/></g>
+              <circle class="svg-pulse-node" cx="150" cy="84" r="20" fill="#041184" stroke="#93c5fd"/>
+              <path d="M142 84h16M150 76v16" stroke="#fff"/>
+            </svg>
+          </div>
+          <h3>Comunicación Omnicanal</h3>
+          <p>Voz, WhatsApp, SMS y redes sociales en un solo ecosistema para conectar con tus clientes por el canal que prefieren.</p>
+          <div class="tech-module-meta"><span>Un historial por titular</span><span>4 canales</span></div>
+        </article>
+        <!-- 2 Voice Blaster -->
+        <article class="tech-module-card reveal">
+          <div class="tech-visual-stage">
+            <span class="tech-stage-badge">+200k IVR/mes</span>
+            <svg viewBox="0 0 300 168" fill="#60a5fa" stroke="none">
+              <g transform="translate(60 34)">
+                <rect class="svg-wave-bar" x="0" y="20" width="9" height="80" rx="4" style="animation-delay:.0s"/>
+                <rect class="svg-wave-bar" x="22" y="20" width="9" height="80" rx="4" style="animation-delay:.15s"/>
+                <rect class="svg-wave-bar" x="44" y="20" width="9" height="80" rx="4" style="animation-delay:.3s" fill="#93c5fd"/>
+                <rect class="svg-wave-bar" x="66" y="20" width="9" height="80" rx="4" style="animation-delay:.45s" fill="#fff"/>
+                <rect class="svg-wave-bar" x="88" y="20" width="9" height="80" rx="4" style="animation-delay:.6s" fill="#93c5fd"/>
+                <rect class="svg-wave-bar" x="110" y="20" width="9" height="80" rx="4" style="animation-delay:.75s"/>
+                <rect class="svg-wave-bar" x="132" y="20" width="9" height="80" rx="4" style="animation-delay:.9s"/>
+                <rect class="svg-wave-bar" x="154" y="20" width="9" height="80" rx="4" style="animation-delay:1.05s" fill="#2563eb"/>
+                <rect class="svg-wave-bar" x="176" y="20" width="9" height="80" rx="4" style="animation-delay:1.2s"/>
+              </g>
+            </svg>
+          </div>
+          <h3>Voice Blaster</h3>
+          <p>Envío de mensajes de voz automatizados para campañas informativas, recordatorios o acciones comerciales.</p>
+          <div class="tech-module-meta"><span>Campañas masivas</span><span>IVR</span></div>
+        </article>
+        <!-- 3 Marcador Predictivo -->
+        <article class="tech-module-card reveal">
+          <div class="tech-visual-stage">
+            <span class="tech-stage-badge">+250k/mes</span>
+            <svg viewBox="0 0 300 168" fill="none" stroke="#60a5fa" stroke-width="1.8">
+              <circle cx="50" cy="84" r="9" fill="#041184"/><circle cx="250" cy="42" r="9" fill="#2563eb"/><circle cx="250" cy="126" r="9" fill="#2563eb"/>
+              <path class="svg-signal-dash" d="M59 84 L241 42"/><path class="svg-signal-dash" d="M59 84 L241 126" style="animation-delay:.5s"/>
+              <path class="svg-signal-dash" d="M59 84 H150" stroke="#93c5fd"/>
+              <circle class="svg-pulse-node" cx="150" cy="84" r="14" fill="#041184" stroke="#fff"/>
+              <path d="M144 84l4 4 8-8" stroke="#fff"/>
+            </svg>
+          </div>
+          <h3>Marcador Predictivo</h3>
+          <p>Optimizamos el tiempo con un marcador predictivo que aumenta la cantidad de contactos efectivos por hora.</p>
+          <div class="tech-module-meta"><span>Más contactos por hora</span><span>Predictivo</span></div>
+        </article>
+        <!-- 4 SMS -->
+        <article class="tech-module-card reveal">
+          <div class="tech-visual-stage">
+            <span class="tech-stage-badge">SMS</span>
+            <svg viewBox="0 0 300 168" fill="none" stroke="#60a5fa" stroke-width="1.6">
+              <rect x="70" y="40" width="110" height="38" rx="12" fill="#041184"/><path d="M92 78l-6 12 18-12"/><path d="M86 55h60M86 66h38" stroke="#93c5fd"/>
+              <g class="svg-pulse-node"><rect x="130" y="92" width="100" height="38" rx="12" fill="#0b1a5e"/><path d="M208 130l6 12-18-12"/><path d="M146 107h66M146 118h40" stroke="#fff"/></g>
+            </svg>
+          </div>
+          <h3>SMS Masivos</h3>
+          <p>Recordatorios, promociones o avisos importantes enviados por SMS para garantizar visibilidad inmediata.</p>
+          <div class="tech-module-meta"><span>Mensajes sin límite</span><span>Inmediato</span></div>
+        </article>
+        <!-- 5 Automatización -->
+        <article class="tech-module-card reveal">
+          <div class="tech-visual-stage">
+            <span class="tech-stage-badge">24/7</span>
+            <svg viewBox="0 0 300 168" fill="none" stroke="#60a5fa" stroke-width="1.6">
+              <g class="svg-orbit-ring" style="transform-origin:150px 84px"><circle cx="150" cy="84" r="46" stroke-dasharray="10 6"/><circle cx="150" cy="38" r="5" fill="#93c5fd" stroke="none"/></g>
+              <g class="svg-orbit-ring" style="transform-origin:150px 84px;animation-direction:reverse;animation-duration:10s"><circle cx="150" cy="84" r="30" stroke="#93c5fd" stroke-dasharray="4 6"/></g>
+              <rect class="svg-pulse-node" x="130" y="64" width="40" height="40" rx="10" fill="#041184" stroke="#fff"/>
+              <circle cx="141" cy="82" r="3" fill="#fff" stroke="none"/><circle cx="159" cy="82" r="3" fill="#fff" stroke="none"/><path d="M142 94h16" stroke="#fff"/>
+            </svg>
+          </div>
+          <h3>Automatización Inteligente</h3>
+          <p>Bots y flujos automatizados que reducen tiempos de respuesta, mejoran la experiencia y multiplican la productividad.</p>
+          <div class="tech-module-meta"><span>Bots y flujos</span><span>24/7</span></div>
+        </article>
+        <!-- 6 Auditoría IA -->
+        <article class="tech-module-card reveal">
+          <div class="tech-visual-stage">
+            <span class="tech-stage-badge">IA</span>
+            <svg viewBox="0 0 300 168" fill="none" stroke="#60a5fa" stroke-width="1.6">
+              <path d="M70 50h110M70 70h140M70 90h90M70 110h120" stroke="#2563eb" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+              <g class="svg-scan-beam"><rect x="150" y="36" width="3" height="94" fill="#93c5fd" stroke="none"/><rect x="146" y="36" width="11" height="94" fill="#60a5fa" opacity=".18" stroke="none"/></g>
+              <circle class="svg-pulse-node" cx="232" cy="84" r="20" fill="#041184" stroke="#fff"/><path d="M224 84l6 6 11-12" stroke="#fff" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Auditoría con Inteligencia Artificial</h3>
+          <p>IA que audita y transcribe conversaciones, analiza sentimientos y optimiza procesos para mayor eficiencia y mejor experiencia del cliente.</p>
+          <div class="tech-module-meta"><span>100% de llamadas</span><span>Speech analytics</span></div>
+        </article>
+      </div>
+
+      <div class="ai-engine-layout">
+        <div class="ai-FeatureList reveal">
+          <div class="ai-feature-item active"
+               data-ai-title="Auditoría Conversacional con IA"
+               data-ai-agent="«Le confirmamos la quita del 40% sobre intereses moratorios abonando hoy en redes de cobranza o transferencia.»"
+               data-ai-client="«Perfecto, envíeme el acuerdo al WhatsApp y realizo el pago ahora mismo.»"
+               data-ai-score1="99%"
+               data-ai-score2="96%"
+               data-ai-score3="100%">
+            <div class="ai-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12 2.1 9.1"/><path d="m12 12 7.5 6.6"/></svg>
+            </div>
+            <div>
+              <h4>Auditoría con Inteligencia Artificial</h4>
+              <p>Audita y transcribe conversaciones automáticamente, analiza sentimientos y optimiza procesos.</p>
+            </div>
+          </div>
+
+          <div class="ai-feature-item"
+               data-ai-title="Comunicación Omnicanal Unificada"
+               data-ai-agent="«Integración sincronizada de Voz, WhatsApp, SMS y redes sociales en un único historial por titular.»"
+               data-ai-client="«Respuesta inmediata por el canal preferido del usuario con mensajería mensual sin límite.»"
+               data-ai-score1="100%"
+               data-ai-score2="95%"
+               data-ai-score3="98%">
+            <div class="ai-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <div>
+              <h4>Comunicación Omnicanal</h4>
+              <p>Voz, WhatsApp, SMS y redes sociales integrados en un solo ecosistema centralizado.</p>
+            </div>
+          </div>
+
+          <div class="ai-feature-item"
+               data-ai-title="Marcador Predictivo (+250k Llamadas/Mes)"
+               data-ai-agent="«Algoritmo predictivo activo: filtrando líneas sin respuesta y conectando solo llamadas contestadas en vivo.»"
+               data-ai-client="«Optimización de tiempos operativos y máxima tasa de contactos efectivos por hora.»"
+               data-ai-score1="98%"
+               data-ai-score2="97%"
+               data-ai-score3="100%">
+            <div class="ai-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div>
+              <h4>Marcador Predictivo</h4>
+              <p>Optimiza tiempos de discado y multiplica los contactos efectivos por hora de cada agente.</p>
+            </div>
+          </div>
+
+          <div class="ai-feature-item"
+               data-ai-title="Voice Blaster & Automatización 24/7"
+               data-ai-agent="«Campaña Voice Blaster (+200k IVR/mes) y Bots conversacionales atendiendo y filtrando consultas 24/7.»"
+               data-ai-client="«Autogestión continua de acuerdos de pago y derivación inteligente a operadores en sala.»"
+               data-ai-score1="100%"
+               data-ai-score2="94%"
+               data-ai-score3="100%">
+            <div class="ai-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="18" height="10" x="3" y="11" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/></svg>
+            </div>
+            <div>
+              <h4>Voice Blaster &amp; Automatización Inteligente</h4>
+              <p>Mensajes de voz automatizados para campañas y bots que atienden, filtran y gestionan 24/7.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-console-card reveal">
+          <div class="ai-console-header">
+            <strong id="aiConsoleTitle" style="font-size:0.95rem;color:var(--text-white);">Auditoría Conversacional con IA</strong>
+            <span style="font-size:0.74rem;color:var(--brand-accent);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Monitoreo Activo</span>
+          </div>
+
+          <div class="ai-waveform-bars" aria-hidden="true">
+            <span style="animation-delay:0.05s"></span>
+            <span style="animation-delay:0.2s"></span>
+            <span style="animation-delay:0.35s"></span>
+            <span style="animation-delay:0.1s"></span>
+            <span style="animation-delay:0.45s"></span>
+            <span style="animation-delay:0.25s"></span>
+            <span style="animation-delay:0.15s"></span>
+            <span style="animation-delay:0.4s"></span>
+            <span style="animation-delay:0.08s"></span>
+            <span style="animation-delay:0.3s"></span>
+            <span style="animation-delay:0.5s"></span>
+            <span style="animation-delay:0.18s"></span>
+            <span style="animation-delay:0.38s"></span>
+            <span style="animation-delay:0.12s"></span>
+            <span style="animation-delay:0.28s"></span>
+            <span style="animation-delay:0.42s"></span>
+          </div>
+
+          <div class="ai-transcript-box">
+            <p class="ai-transcript-line" id="aiLineAgent">
+              <strong>Operativa BRANAVI:</strong> «Le confirmamos la quita del 40% sobre intereses moratorios abonando hoy en redes de cobranza o transferencia.»
+            </p>
+            <p class="ai-transcript-line" id="aiLineClient">
+              <strong>Respuesta / Impacto:</strong> «Perfecto, envíeme el acuerdo al WhatsApp y realizo el pago ahora mismo.»
+            </p>
+          </div>
+
+          <div class="ai-metrics-meters">
+            <div class="ai-meter-row">
+              <div class="ai-meter-label">
+                <span>Transcripción &amp; Speech Analytics</span>
+                <span id="aiScore1">99%</span>
+              </div>
+              <div class="ai-meter-track">
+                <div class="ai-meter-fill" id="aiBar1" style="width:99%;"></div>
+              </div>
+            </div>
+
+            <div class="ai-meter-row">
+              <div class="ai-meter-label">
+                <span>Análisis de Sentimiento y Resolución</span>
+                <span id="aiScore2">96%</span>
+              </div>
+              <div class="ai-meter-track">
+                <div class="ai-meter-fill" id="aiBar2" style="width:96%;"></div>
+              </div>
+            </div>
+
+            <div class="ai-meter-row">
+              <div class="ai-meter-label">
+                <span>Adherencia a Protocolo de Calidad</span>
+                <span id="aiScore3">100%</span>
+              </div>
+              <div class="ai-meter-track">
+                <div class="ai-meter-fill" id="aiBar3" style="width:100%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN 3: CURVA DE CRECIMIENTO AUDITADA (2023 - OCTUBRE 2026)
+       ======================================================================== -->
+  <section class="section" id="resultados">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-tag">Resultados Comprobados</span>
+        <h2 class="section-title">Evolución de Cartera de Clientes</h2>
+        <p class="section-subtitle">
+          Crecimiento sostenido año tras año, alcanzando más de <strong>$352.000.000 Pesos Uruguayos recuperados</strong> y un 300% de cumplimiento de objetivos.
+        </p>
+      </div>
+
+      <div class="results-grid">
+        <div class="timeline-steps reveal">
+          <div class="timeline-step-card">
+            <span class="tl-year">2023</span>
+            <div class="tl-money">
+              Inicio Operativo
+              <small>Consolidación de plataforma y equipos en Montevideo</small>
+            </div>
+            <span class="tl-goal-pill">Base</span>
+          </div>
+
+          <div class="timeline-step-card">
+            <span class="tl-year">2024</span>
+            <div class="tl-money">
+              $25.984.637
+              <small>Pesos Uruguayos recuperados</small>
+            </div>
+            <span class="tl-goal-pill">120% Meta</span>
+          </div>
+
+          <div class="timeline-step-card">
+            <span class="tl-year">2025</span>
+            <div class="tl-money">
+              $87.804.812
+              <small>Pesos Uruguayos recuperados</small>
+            </div>
+            <span class="tl-goal-pill">200% Meta</span>
+          </div>
+
+          <div class="timeline-step-card">
+            <span class="tl-year">2026</span>
+            <div class="tl-money">
+              $121.941.174
+              <small>Pesos Uruguayos recuperados</small>
+            </div>
+            <span class="tl-goal-pill">250% Meta</span>
+          </div>
+
+          <div class="timeline-step-card peak-card">
+            <span class="tl-year">Oct. 2026</span>
+            <div class="tl-money">
+              $169.025.245
+              <small>Récord de recuperación y cumplimiento</small>
+            </div>
+            <span class="tl-goal-pill">300% Meta</span>
+          </div>
+        </div>
+
+        <div class="chart-showcase-box reveal">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.75rem;flex-wrap:wrap;gap:0.75rem;">
+            <div>
+              <h3 style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;">Curva de Recuperación (UYU)</h3>
+              <span style="font-size:0.8rem;color:var(--text-muted);">Datos Oficiales • Brochure BRANAVI</span>
+            </div>
+            <span class="tl-goal-pill">+$352.000.000 Acumulados</span>
+          </div>
+
+          <svg viewBox="0 0 620 310" style="width:100%;overflow:visible;" role="img" aria-label="Curva de crecimiento BRANAVI 2023 a Octubre 2026">
+            <defs>
+              <linearGradient id="v2Area" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.32" />
+                <stop offset="100%" stop-color="#041184" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="v2Stroke" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#1d4ed8" />
+                <stop offset="100%" stop-color="#60a5fa" />
+              </linearGradient>
+            </defs>
+
+            <line x1="40" y1="255" x2="590" y2="255" stroke="rgba(255,255,255,0.1)" />
+            <line x1="40" y1="185" x2="590" y2="185" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4" />
+            <line x1="40" y1="115" x2="590" y2="115" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4" />
+
+            <path d="M 55 255 L 175 222 L 315 154 L 445 104 L 565 42 L 565 255 Z" fill="url(#v2Area)" />
+            <polyline fill="none" stroke="url(#v2Stroke)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"
+              points="55,255 175,222 315,154 445,104 565,42" />
+
+            <circle cx="55" cy="255" r="5" fill="#030712" stroke="#60a5fa" stroke-width="2.5" />
+            <text x="55" y="282" fill="#94a3b8" font-size="12" font-weight="600" text-anchor="middle">2023</text>
+
+            <circle cx="175" cy="222" r="6" fill="#030712" stroke="#60a5fa" stroke-width="2.5" />
+            <text x="175" y="205" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">$25,9M</text>
+            <text x="175" y="282" fill="#cbd5e1" font-size="12" font-weight="600" text-anchor="middle">2024</text>
+
+            <circle cx="315" cy="154" r="6" fill="#030712" stroke="#60a5fa" stroke-width="2.5" />
+            <text x="315" y="136" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">$87,8M</text>
+            <text x="315" y="282" fill="#cbd5e1" font-size="12" font-weight="600" text-anchor="middle">2025</text>
+
+            <circle cx="445" cy="104" r="6" fill="#030712" stroke="#60a5fa" stroke-width="2.5" />
+            <text x="445" y="86" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">$121,9M</text>
+            <text x="445" y="282" fill="#cbd5e1" font-size="12" font-weight="600" text-anchor="middle">2026</text>
+
+            <circle cx="565" cy="42" r="7.5" fill="#60a5fa" stroke="#ffffff" stroke-width="2.5" />
+            <text x="550" y="22" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">$169.025.245 (300%)</text>
+            <text x="565" y="282" fill="#60a5fa" font-size="12" font-weight="700" text-anchor="middle">Oct 2026</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN 4: INFRAESTRUCTURA DISEÑADA PARA RENDIR (FOTOS REALES MVD)
+       ======================================================================== -->
+  <section class="section section-glass" id="infraestructura">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-tag">Planta Operativa Montevideo</span>
+        <h2 class="section-title">Infraestructura Diseñada para Rendir</h2>
+        <p class="section-subtitle">
+          Ubicados en <strong>Convención 1343, esq. 18 de Julio, Piso 9</strong>, contamos con salas operativas modernas, monitoreo en tiempo real y más de 30 posiciones activas.
+        </p>
+      </div>
+
+      <div class="gallery-stage reveal">
+        <div class="gallery-main-viewport">
+          <img id="galleryMainPhoto" src="assets/oficina_panoramica.jpg" alt="Planta operativa BRANAVI en Montevideo" />
+          <div class="gallery-caption-bar">
+            <h3 id="galleryMainHeading">Doble Sala Operativa con Monitoreo en Vivo</h3>
+            <p id="galleryMainSub">Vista panorámica de nuestras salas en Convención 1343 Piso 9 con pantallas de seguimiento y supervisión continua.</p>
+          </div>
+        </div>
+
+        <div class="gallery-thumbs-stack">
+          <div class="gallery-thumb-item active"
+               data-photo="assets/oficina_panoramica.jpg"
+               data-heading="Doble Sala Operativa con Monitoreo en Vivo"
+               data-sub="Vista panorámica de nuestras salas en Convención 1343 Piso 9 con pantallas de seguimiento y supervisión continua.">
+            <img src="assets/oficina_panoramica.jpg" alt="Sala Panorámica BRANAVI" />
+            <span>01. Vista Panorámica</span>
+          </div>
+
+          <div class="gallery-thumb-item"
+               data-photo="assets/oficina_operadores_1.jpg"
+               data-heading="Equipos Estables de Baja Rotación"
+               data-sub="Líneas de gestión entrenadas en negociación empática, reasignación constante de carteras y cumplimiento de objetivos.">
+            <img src="assets/oficina_operadores_1.jpg" alt="Operadores BRANAVI" />
+            <span>02. Líneas de Gestión</span>
+          </div>
+
+          <div class="gallery-thumb-item"
+               data-photo="assets/oficina_boxes_2.jpg"
+               data-heading="Boxes Acústicos Individuales"
+               data-sub="Puestos ergonómicos con divisores fonoabsorbentes, headsets profesionales y telefonía IP de alta disponibilidad.">
+            <img src="assets/oficina_boxes_2.jpg" alt="Boxes operativos BRANAVI" />
+            <span>03. Boxes Operativos</span>
+          </div>
+
+          <div class="gallery-thumb-item"
+               data-photo="assets/oficina_isla_3.jpg"
+               data-heading="Islas de Supervisión y Calidad"
+               data-sub="Conexión directa entre los gestores telefónicos, auditores de calidad IA y el respaldo de Estudio Jurídico BRANAVI.">
+            <img src="assets/oficina_isla_3.jpg" alt="Isla de trabajo BRANAVI" />
+            <span>04. Islas de Supervisión</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN 5: CLIENTES REALES Y CASO DE ÉXITO (MATHIAS GARCÍA - VIEMVENTURA)
+       ======================================================================== -->
+  <section class="section" id="clientes">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-tag">Confianza Corporativa</span>
+        <h2 class="section-title">Empresas que Confían en Nosotros</h2>
+        <p class="section-subtitle">
+          Construimos relaciones de largo plazo basadas en el compromiso, la precisión operativa y la mejora constante.
+        </p>
+      </div>
+
+      <div class="clients-wall reveal">
+        <div class="client-tile" title="Viemventura">
+          <img src="assets/cliente_viemventura.png" alt="Viemventura" />
+        </div>
+        <div class="client-tile" title="COBRIX Libreta Digital">
+          <img src="assets/cliente_cobrix.png" alt="COBRIX Libreta Digital" />
+        </div>
+        <div class="client-tile" title="Unico Rent">
+          <img src="assets/cliente_unico_rent.png" alt="Unico Rent" />
+        </div>
+        <div class="client-tile" title="EXM">
+          <img src="assets/cliente_exm.png" alt="EXM" />
+        </div>
+        <div class="client-tile" title="EN Business Center">
+          <img src="assets/cliente_business_center.png" alt="EN Business Center" />
+        </div>
+        <div class="client-tile" title="Mercurius">
+          <img src="assets/cliente_mercurius.png" alt="Mercurius" />
+        </div>
+      </div>
+
+      <div class="testimonial-hero-card reveal">
+        <div style="text-align:center;">
+          <div class="testi-avatar-ring">
+            <img src="assets/mathias_garcia.jpg" alt="Mathias García - Jefe de Operaciones de Viemventura" />
+          </div>
+          <div style="background:#ffffff;padding:0.4rem 0.85rem;border-radius:8px;display:inline-flex;">
+            <img src="assets/cliente_viemventura.png" alt="Viemventura" style="height:20px;width:auto;" />
+          </div>
+        </div>
+
+        <div>
+          <span class="eyebrow-tag" style="margin-bottom:0.75rem;">Caso de Éxito</span>
+          <blockquote class="testi-quote">
+            “Desde la incorporación de Estudio Jurídico Branavi a la operativa de Viemventura, hemos consolidado una dinámica de trabajo basada en el compromiso, la precisión y la mejora constante. Destaco especialmente su capacidad de adaptación, la cercanía en el trato y un timing preciso para resolver cada situación con el nivel de solvencia que requerimos. Su consistencia en el cumplimiento de los objetivos asumidos confirma el valor de contar con aliados estratégicos alineados a nuestra búsqueda diaria de excelencia.”
+          </blockquote>
+          <div>
+            <h4 style="font-family:var(--font-display);font-size:1.2rem;font-weight:700;">Mathias García</h4>
+            <p style="color:var(--brand-accent);font-weight:600;font-size:0.88rem;">Jefe de Operaciones de Viemventura</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN 6: CONTACTO CORPORATIVO LIMPIO Y DIRECTO
+       ======================================================================== -->
+  <section class="section section-glass" id="contacto">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-tag">Contacto Directo</span>
+        <h2 class="section-title">Conectá con BRANAVI Connect</h2>
+        <p class="section-subtitle">
+          Seleccioná tu consulta para comunicarte con nuestra Dirección Comercial, gestionar el pago de una deuda o postularte a nuestro equipo.
+        </p>
+      </div>
+
+      <div class="contact-dual-grid">
+        <div class="contact-card-left reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;">Sede Central Montevideo</h3>
+          <p style="color:var(--text-muted);font-size:0.94rem;">
+            Atención corporativa en el Centro de Montevideo y canales digitales activos las 24 horas.
+          </p>
+
+          <div class="contact-list-items">
+            <div class="c-row">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Dirección</strong>
+                <span>Convención 1343, esq. 18 de Julio, Piso 9<br />Montevideo, Uruguay</span>
+              </div>
+            </div>
+
+            <div class="c-row">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Teléfono</strong>
+                <a href="tel:29050510">2905 0510</a>
+              </div>
+            </div>
+
+            <div class="c-row">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@estudiobranavi.com">info@estudiobranavi.com</a>
+              </div>
+            </div>
+
+            <div class="c-row">
+              <div class="c-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <strong>División Jurídica &amp; Notarial</strong>
+                <a href="https://estudiobranavi.com" target="_blank" rel="noopener" style="color:var(--brand-accent);">estudiobranavi.com ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card-right reveal">
+          <div class="mode-pills" role="tablist">
+            <button type="button" class="mode-pill-btn active" data-form-mode="empresa">
+              Empresas (BPO / Cobranzas)
+            </button>
+            <button type="button" class="mode-pill-btn" data-form-mode="deudor">
+              Quiero Pagar
+            </button>
+            <button type="button" class="mode-pill-btn" data-form-mode="rrhh">
+              Trabajá con Nosotros
+            </button>
+          </div>
+
+          <form id="unifiedContactForm" class="modern-form-grid">
+            <div class="field-box">
+              <label for="fNombre">Nombre y Apellido *</label>
+              <input type="text" id="fNombre" placeholder="Tu nombre completo" required />
+            </div>
+
+            <div class="field-box">
+              <label for="fExtra" id="lblExtra">Empresa / Razón Social *</label>
+              <input type="text" id="fExtra" placeholder="Nombre de la empresa o institución" required />
+            </div>
+
+            <div class="field-box">
+              <label for="fEmail">Correo Electrónico *</label>
+              <input type="email" id="fEmail" placeholder="correo@empresa.com.uy" required />
+            </div>
+
+            <div class="field-box">
+              <label for="fTel">Teléfono / Celular *</label>
+              <input type="tel" id="fTel" placeholder="099 000 000 / 2905 0510" required />
+            </div>
+
+            <div class="field-box span-2">
+              <label for="fServicio" id="lblServicio">Servicio de Contact Center Requerido *</label>
+              <select id="fServicio" required>
+                <option value="Gestión Integral de Cobranzas (Mora Preventiva, Temprana, Tardía y Pre-Judicial)">Gestión Integral de Cobranzas (Mora Preventiva, Temprana, Tardía y Pre-Judicial)</option>
+                <option value="Telemarketing, Televentas Outbound y Teleagendamiento">Telemarketing, Televentas Outbound y Teleagendamiento</option>
+                <option value="Atención al Cliente Inbound Omnicanal y Retención">Atención al Cliente Inbound Omnicanal y Retención</option>
+                <option value="Campañas Masivas Voice Blaster, IVR Interactivo y Bots 24/7">Campañas Masivas Voice Blaster, IVR Interactivo y Bots 24/7</option>
+                <option value="Enriquecimiento de Bases de Datos (BBDD), Encuestas y Back Office">Enriquecimiento de Bases de Datos (BBDD), Encuestas y Back Office</option>
+              </select>
+            </div>
+
+            <div class="field-box span-2">
+              <label for="fMensaje" id="lblMensaje">Volumen Estimado o Detalle de la Operativa *</label>
+              <textarea id="fMensaje" rows="4" placeholder="Contanos brevemente sobre tu cartera o campaña para preparar una propuesta comercial a medida..." required></textarea>
+            </div>
+
+            <div class="field-box span-2">
+              <button type="submit" class="btn-magnetic btn-glow btn-xl" style="width:100%;" id="btnSubmitForm">
+                Solicitar Propuesta a BRANAVI Connect
+              </button>
+              <p id="formStatusMsg" style="display:none;margin-top:0.85rem;padding:0.8rem 1rem;border-radius:10px;background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.35);color:#93c5fd;font-size:0.85rem;"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER CORPORATIVO + FIRMA SUTIL DE ZENSOFTWARE.STUDIO
+       ======================================================================== -->
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="footer-cols">
+        <div>
+          <img src="assets/logo_branavi_blanco.png" alt="BRANAVI Contact Center y Cobranza" style="height:44px;width:auto;margin-bottom:1.1rem;" />
+          <p style="color:var(--text-muted);font-size:0.88rem;line-height:1.75;">
+            El futuro de las cobranzas es hoy. Combinamos la escala, velocidad y tecnología de un Contact Center omnicanal con el respaldo especialista de Estudio Jurídico BRANAVI.
+          </p>
+        </div>
+
+        <div>
+          <h4>Ciclo de Cobranzas</h4>
+          <ul>
+            <li><a href="#que-hacemos">Mora Preventiva y Temprana</a></li>
+            <li><a href="#que-hacemos">Mora Tardía y Recupero</a></li>
+            <li><a href="#que-hacemos">Escalamiento Pre-Judicial</a></li>
+            <li><a href="#contacto" data-select-mode="deudor">Portal Quiero Pagar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact Center &amp; IA</h4>
+          <ul>
+            <li><a href="#que-hacemos">Televentas y Teleagendamiento</a></li>
+            <li><a href="#que-hacemos">Atención Inbound Omnicanal</a></li>
+            <li><a href="#tecnologia-ia">Marcador Predictivo &amp; IVR</a></li>
+            <li><a href="#tecnologia-ia">Auditoría Conversacional con IA</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="#contacto">Convención 1343, Piso 9 — MVD</a></li>
+            <li><a href="tel:29050510">Tel: 2905 0510</a></li>
+            <li><a href="mailto:info@estudiobranavi.com">info@estudiobranavi.com</a></li>
+            <li><a href="https://estudiobranavi.com" target="_blank" rel="noopener">estudiobranavi.com ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <span>© 2026 BRANAVI Connect (branaviconnect.com) — Todos los derechos reservados.</span>
+        <span class="dev-credit">
+          Desarrollado por <a href="https://zensoftware.studio" target="_blank" rel="noopener">zensoftware.studio</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante Derecha -->
+  <a href="tel:29050510" class="floating-action-hub" aria-label="Llamar a BRANAVI 2905 0510">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span>2905 0510</span>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1755,3 +1755,13 @@ body {
 .cc-kpi-box { min-height: 118px; }
 .cc-kpi-box .num { white-space: nowrap; font-size: 1.4rem; }
 @media (max-width: 820px) { .cc-video-showcase { height: 220px; } }
+
+/* Hero: columna de la tarjeta mas ancha (crece hacia la izquierda) y fija; luces -40% */
+.hero-grid { grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr); gap: 3.5rem; }
+.command-center-wrap { min-width: 0; width: 100%; }
+.command-center-card { min-width: 0; }
+.cc-video-showcase { height: 340px; }
+#neuralCanvas { opacity: 0.6; }
+@media (max-width: 1120px) { .hero-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 820px) { .cc-video-showcase { height: 230px; } }
+

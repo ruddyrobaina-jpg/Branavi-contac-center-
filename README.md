@@ -28,15 +28,11 @@ Listado de sitios web de referencia proporcionados para definir la línea estét
 
 ---
 
-## 🏛️ 3. Dos Propuestas Disponibles para Revisión de Dirección
+## 3. Propuesta Vigente
 
-Siguiendo la indicación de conservar todas las propuestas para decisión de los jefes, la carpeta cuenta con **2 versiones completas y funcionales**:
+La propuesta animada es la única versión vigente: [`index.html`](index.html) (`styles.css` + `app.js`). La propuesta clásica (V1) fue descartada por Dirección y eliminada.
 
-- **Propuesta V2 — Animada Moderna (Principal):** [`index.html`](file:///c:/Users/t_cel/Desktop/BRANAVI/02_web_contact_center/index.html) (`styles.css` + `app.js`)
-  - Integra todo lo que hace actualmente **BRANAVI™** en `https://estudiobranavi.com` (*Abogados 24 hrs en Derecho Comercial, Civil, Laboral, Penal y Familia; Escribanía y Servicios Notariales; Apertura y Administración de Empresas ante DGI, BPS y MTSS*) fusionado con toda la potencia del **Contact Center & BPO** (*Cobranza Preventiva, Temprana, Tardía, Ejecución Judicial, Televentas, Teleagendamiento, Atención Omnicanal, Marcador Predictivo, Voice Blaster, Bots 24/7 y Auditoría con IA*).
-  - **Animaciones de última generación:** Red neuronal interactiva en `<canvas>` que reacciona al cursor, rotador tipográfico en vivo, tarjeta de comando 3D con efecto tilt y slideshow automático de las salas en Convención 1343 Piso 9, marquesina infinita, contadores numéricos animados al hacer scroll, tarjetas con spotlight luminoso y consola interactiva de Auditoría IA con ondas de voz en tiempo real.
-- **Propuesta V1 — Corporativa Clásica (Respaldo):** [`version_1_clasica.html`](file:///c:/Users/t_cel/Desktop/BRANAVI/02_web_contact_center/version_1_clasica.html) (`styles_v1.css` + `app_v1.js`)
-  - Mantiene intacta la primera propuesta ejecutiva de corte clásico, accesible con un clic desde el selector flotante inferior izquierdo en ambas páginas.
+Incluye red de luces interactiva que reacciona al mouse, rotador de titular, carrusel de fotos de la sala con marco fijo, contadores animados al hacer scroll y consola de Auditoría IA.
 
 ---
 

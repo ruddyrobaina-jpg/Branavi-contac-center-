@@ -239,21 +239,14 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
+  const slideEls = document.querySelectorAll('.hero-slide');
   let slideIdx = 0;
   setInterval(() => {
     slideIdx = (slideIdx + 1) % heroSlides.length;
     const s = heroSlides[slideIdx];
-    if (heroSlideImg) {
-      heroSlideImg.style.opacity = '0.35';
-      setTimeout(() => {
-        heroSlideImg.src = s.img;
-        if (heroSlideTag) heroSlideTag.textContent = s.tag;
-        if (heroSlideTitle) heroSlideTitle.textContent = s.title;
-        if (liveTickerBadge) liveTickerBadge.textContent = s.badge;
-        if (liveTickerText) liveTickerText.textContent = s.ticker;
-        heroSlideImg.style.opacity = '1';
-      }, 240);
-    }
+    slideEls.forEach((el, i) => el.classList.toggle('is-active', i === slideIdx));
+    if (heroSlideTag) heroSlideTag.textContent = s.tag;
+    if (heroSlideTitle) heroSlideTitle.textContent = s.title;
   }, 4500);
 
   /* ==========================================================================

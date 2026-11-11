@@ -145,10 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const dynamicHeadline = document.getElementById('dynamicHeadline');
   const phrases = [
     'las cobranzas ES HOY.',
-    'tu Contact Center BPO.',
+    'tu Contact Center.',
     'la auditoría con IA.',
-    'la omnicanalidad 24/7.',
-    'el recupero de activos.',
+    'la atención 24/7.',
+    'el recupero de cartera.',
   ];
   let phraseIdx = 0;
   let charIdx = phrases[0].length;
@@ -202,11 +202,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Rotador automático de fotos reales de la sede en el Hero + Ticker en vivo
-  const heroSlideImg = document.getElementById('heroSlideImg');
   const heroSlideTag = document.getElementById('heroSlideTag');
   const heroSlideTitle = document.getElementById('heroSlideTitle');
-  const liveTickerBadge = document.getElementById('liveTickerBadge');
-  const liveTickerText = document.getElementById('liveTickerText');
 
   const heroSlides = [
     {

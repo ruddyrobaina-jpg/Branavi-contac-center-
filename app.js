@@ -69,31 +69,40 @@ document.addEventListener('DOMContentLoaded', () => {
       mouse.y = -1000;
     });
 
-    const count = Math.min(55, Math.floor((window.innerWidth || 1200) / 26));
+    const count = Math.min(95, Math.floor((window.innerWidth || 1200) / 15));
     for (let i = 0; i < count; i++) {
       particles.push({
         x: Math.random() * width,
         y: Math.random() * height,
         vx: (Math.random() - 0.5) * 0.65,
         vy: (Math.random() - 0.5) * 0.65,
-        r: Math.random() * 2 + 1.2,
+        r: Math.random() * 2.2 + 1.6,
       });
     }
 
     const animateNetwork = () => {
       ctx.clearRect(0, 0, width, height);
+      if (mouse.x > -500) {
+        const g = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 260);
+        g.addColorStop(0, 'rgba(96, 165, 250, 0.22)');
+        g.addColorStop(1, 'rgba(96, 165, 250, 0)');
+        ctx.fillStyle = g;
+        ctx.fillRect(mouse.x - 260, mouse.y - 260, 520, 520);
+      }
 
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
         p.x += p.vx;
         p.y += p.vy;
+        const ax = mouse.x - p.x, ay = mouse.y - p.y, ad = Math.hypot(ax, ay);
+        if (ad < 230 && ad > 1) { p.x += (ax / ad) * 0.5; p.y += (ay / ad) * 0.5; }
 
         if (p.x < 0 || p.x > width) p.vx *= -1;
         if (p.y < 0 || p.y > height) p.vy *= -1;
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(96, 165, 250, 0.65)';
+        ctx.fillStyle = 'rgba(147, 197, 253, 0.95)';
         ctx.fill();
 
         for (let j = i + 1; j < particles.length; j++) {
@@ -101,11 +110,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const dx = p.x - p2.x;
           const dy = p.y - p2.y;
           const dist = Math.hypot(dx, dy);
-          if (dist < 135) {
+          if (dist < 150) {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(96, 165, 250, ${(1 - dist / 135) * 0.22})`;
+            ctx.strokeStyle = `rgba(96, 165, 250, ${(1 - dist / 150) * 0.5})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
@@ -114,12 +123,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const mdx = p.x - mouse.x;
         const mdy = p.y - mouse.y;
         const mdist = Math.hypot(mdx, mdy);
-        if (mdist < 170) {
+        if (mdist < 230) {
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(96, 165, 250, ${(1 - mdist / 170) * 0.48})`;
-          ctx.lineWidth = 1.2;
+          ctx.strokeStyle = `rgba(96, 165, 250, ${(1 - mdist / 230) * 0.95})`;
+          ctx.lineWidth = 1.6;
           ctx.stroke();
         }
       }

@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       img: 'assets/oficina_operadores_1.jpg',
       tag: 'Equipos Estables • Baja Rotación',
-      title: '+30 Agentes Especializados en Recupero y Ventas',
+      title: '+64 Posiciones Disponibles para Recupero y Ventas',
       badge: 'PREDICTIVO',
       ticker: '+250.000 llamadas mensuales con conexión inmediata...',
     },

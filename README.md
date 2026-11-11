@@ -52,7 +52,7 @@ Siguiendo la indicación de conservar todas las propuestas para decisión de los
      - `+250 mil` llamadas mensuales.
      - `+200 mil` IVR mensuales.
      - `SIN LÍMITE` mensajes mensuales (Voz, WhatsApp, SMS, Redes).
-     - `+30 Agentes` activos con baja rotación y reasignación constante.
+     - `+64 Posiciones` disponibles con baja rotación y reasignación constante.
 3. **Qué Hacemos: Ecosistema Completo (9 Unidades con Filtro Interactivo):**
    - **Cobranzas:** Mora Preventiva y Temprana (1–90 días), Mora Tardía (+90–360 días) y Cobranza Pre-Judicial / Procesos Ejecutivos.
    - **Contact Center BPO:** Televentas y Teleagendamiento, Atención al Cliente Inbound & Actualización de BBDD, y Campañas Masivas Voice Blaster, IVR & Bots 24/7.

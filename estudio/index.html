@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRANAVI | Estudio Jurídico y Escribanía en Montevideo</title>
+  <meta name="description" content="BRANAVI: asesoría jurídica, escribanía, sucesiones, compraventas y administración de empresas en Montevideo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand-identity" aria-label="BRANAVI Estudio Jurídico">
+        <img src="assets/logo_branavi_blanco.png" alt="BRANAVI Estudio Jurídico y Escribanía" />
+        <div class="brand-tag"><strong>Estudio Jurídico &amp; Escribanía</strong><span>estudiobranavi.com</span></div>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#areas">Áreas Legales</a>
+        <a href="#empresas">Empresas</a>
+        <a href="#estudio">El Estudio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-cta-group">
+        <a href="tel:29050510" class="btn-magnetic btn-glass">Llamar ahora</a>
+        <a href="#contacto" class="btn-magnetic btn-glow">Solicitar Consulta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-stage" id="inicio">
+      <canvas id="neuralCanvas"></canvas>
+      <div class="container hero-grid">
+        <div class="hero-copy-col">
+          <div class="hero-eyebrow-pill"><span class="pulse-dot"></span>BRANAVI · Montevideo, Uruguay</div>
+          <h1 class="hero-headline">El respaldo para <span class="hero-dynamic-slot"><span class="hero-dynamic-word" id="dynamicHeadline">tus decisiones legales.</span></span></h1>
+          <p class="hero-description">Integramos <strong>asesoría jurídica, escribanía y administración de empresas</strong> para acompañar a personas y organizaciones con claridad, seguimiento y respaldo profesional.</p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn-magnetic btn-glow btn-xl">Coordinar una Consulta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            <a href="#servicios" class="btn-magnetic btn-glass btn-xl">Conocer Servicios</a>
+          </div>
+        </div>
+        <div class="command-center-wrap">
+          <div class="command-center-card" id="heroTiltCard">
+            <div class="cc-top-bar"><img src="assets/logo_branavi_blanco.png" alt="BRANAVI" /><span class="cc-status-label"><span class="pulse-dot"></span>Convención 1343, Piso 9</span></div>
+            <div class="cc-video-showcase">
+              <img class="hero-slide is-active" src="assets/hero_1.jpg" alt="Oficinas de BRANAVI en Montevideo" />
+              <img class="hero-slide" src="assets/hero_2.jpg" alt="Equipo de BRANAVI" />
+              <img class="hero-slide" src="assets/hero_3.jpg" alt="Espacio de atención de BRANAVI" />
+              <img class="hero-slide" src="assets/hero_4.jpg" alt="Sede de BRANAVI" />
+              <div class="cc-hud-overlay"><div class="cc-hud-bottom"><strong id="heroSlideTitle">Estudio Jurídico y Escribanía</strong><span id="heroSlideTag">Atención para personas y empresas</span></div></div>
+            </div>
+            <div class="cc-kpi-duo">
+              <div class="cc-kpi-box"><div class="num"><span>Legal</span></div><div class="lbl">Asesoría jurídica integral</div></div>
+              <div class="cc-kpi-box"><div class="num"><span>Empresas</span></div><div class="lbl">Gestión societaria y tributaria</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="counters-section" aria-label="Servicios del estudio">
+      <div class="container"><div class="counters-grid reveal">
+        <div class="counter-card"><div class="counter-value"><span class="prefix">Legal</span></div><div class="counter-title">Asesoría Jurídica</div><div class="counter-note">Personas y empresas</div></div>
+        <div class="counter-card"><div class="counter-value"><span class="prefix">Notarial</span></div><div class="counter-title">Escribanía</div><div class="counter-note">Actos y documentos</div></div>
+        <div class="counter-card"><div class="counter-value"><span class="prefix">Patrimonio</span></div><div class="counter-title">Compraventas y sucesiones</div><div class="counter-note">Inmuebles y vehículos</div></div>
+        <div class="counter-card"><div class="counter-value"><span class="prefix">Empresa</span></div><div class="counter-title">Administración</div><div class="counter-note">DGI, BPS y MTSS</div></div>
+        <div class="counter-card"><div class="counter-value"><span class="prefix">MVD</span></div><div class="counter-title">Atención presencial</div><div class="counter-note">Centro de Montevideo</div></div>
+      </div></div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow-tag">Nuestros servicios</span><h2 class="section-title">Soluciones jurídicas, notariales y empresariales</h2><p class="section-subtitle">Asesoramiento para personas y empresas en cada etapa: consulta, documentación, formalización y gestión.</p></div>
+        <div class="ecosystem-switcher reveal" role="tablist">
+          <button type="button" class="eco-tab active" data-eco="all">Todos los servicios</button>
+          <button type="button" class="eco-tab" data-eco="legal">Jurídico</button>
+          <button type="button" class="eco-tab" data-eco="notarial">Escribanía</button>
+          <button type="button" class="eco-tab" data-eco="empresa">Empresas</button>
+        </div>
+        <div class="cards-3d-grid" id="ecosystemGrid">
+          <article class="tilt-card reveal" data-eco-cat="legal"><span class="card-division-pill">Asesoría Jurídica</span><div class="service-card-media"><img src="assets/service-advisory.jpg" alt="Consulta jurídica profesional" loading="lazy" /></div><h3>Asesoría jurídica</h3><p>Orientación legal para personas y empresas en asuntos penales, familiares, laborales, civiles y comerciales.</p></article>
+          <article class="tilt-card reveal" data-eco-cat="notarial"><span class="card-division-pill">Sucesiones</span><div class="service-card-media"><img src="assets/service-inheritance.jpg" alt="Documentación para sucesiones" loading="lazy" /></div><h3>Testamentos y herencias</h3><p>Instrumentos para establecer la distribución de bienes y acompañamiento en su transferencia a herederos.</p></article>
+          <article class="tilt-card reveal" data-eco-cat="notarial"><span class="card-division-pill">Inmuebles</span><div class="service-card-media"><img src="assets/service-property.jpg" alt="Propiedad residencial" loading="lazy" /></div><h3>Transacciones de bienes inmuebles</h3><p>Compraventa y transferencia de propiedades, con formalización documental y respaldo notarial.</p></article>
+          <article class="tilt-card reveal" data-eco-cat="notarial"><span class="card-division-pill">Vehículos</span><div class="service-card-media"><img src="assets/service-vehicles.jpg" alt="Vehículo para transferencia de propiedad" loading="lazy" /></div><h3>Compraventa de vehículos</h3><p>Transferencia de propiedad y documentación para dar seguridad jurídica a cada operación.</p></article>
+          <article class="tilt-card reveal" data-eco-cat="legal"><span class="card-division-pill">Familia</span><div class="service-card-media"><img src="assets/service-family.jpg" alt="Familia reunida" loading="lazy" /></div><h3>Contratos matrimoniales</h3><p>Acuerdos sobre la gestión de bienes y obligaciones durante el matrimonio y ante una eventual separación.</p></article>
+          <article class="tilt-card reveal" data-eco-cat="legal"><span class="card-division-pill">Familia</span><div class="service-card-media"><img src="assets/service-divorce.jpg" alt="Consulta para acuerdo familiar" loading="lazy" /></div><h3>Divorcios</h3><p>Acompañamiento en la disolución del vínculo, división de bienes, custodia y pensiones alimenticias.</p></article>
+          <article class="tilt-card reveal" data-eco-cat="notarial"><span class="card-division-pill">Documentos</span><div class="service-card-media"><img src="assets/service-certificates.jpg" alt="Certificación de documentos" loading="lazy" /></div><h3>Certificados notariales</h3><p>Documentos que autentican hechos, actos o declaraciones con validez legal y seguridad jurídica.</p></article>
+          <article class="tilt-card reveal" data-eco-cat="empresa"><span class="card-division-pill">Empresas</span><div class="service-card-media"><img src="assets/service-formation.jpg" alt="Reunión para formación de empresa" loading="lazy" /></div><h3>Formación de empresas</h3><p>Constitución, registro y definición de la estructura jurídica y operativa de una empresa.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-glass" id="areas">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow-tag">Áreas de práctica</span><h2 class="section-title">Un equipo para cada situación</h2><p class="section-subtitle">Especialidades para asuntos personales, familiares, patrimoniales, laborales, comerciales y sucesorios.</p></div>
+        <div class="tech-bento-grid">
+          <article class="tech-module-card reveal"><div class="tech-visual-stage"><img src="assets/area-penal.jpg" alt="Consulta de derecho penal" loading="lazy" /><span class="tech-stage-badge">01</span></div><h3>Derecho Penal</h3><p>Asistencia y defensa ante situaciones comprendidas en el derecho penal.</p><div class="tech-module-meta"><span>Defensa</span><span>Asesoramiento</span></div></article>
+          <article class="tech-module-card reveal"><div class="tech-visual-stage"><img src="assets/area-commercial.jpg" alt="Reunión de derecho comercial" loading="lazy" /><span class="tech-stage-badge">02</span></div><h3>Derecho Comercial</h3><p>Asesoramiento para la actividad comercial y las relaciones jurídicas de las empresas.</p><div class="tech-module-meta"><span>Contratos</span><span>Empresas</span></div></article>
+          <article class="tech-module-card reveal"><div class="tech-visual-stage"><img src="assets/area-family.jpg" alt="Consulta de derecho de familia" loading="lazy" /><span class="tech-stage-badge">03</span></div><h3>Derecho de Familia</h3><p>Divorcios, acuerdos, obligaciones y situaciones vinculadas a la familia.</p><div class="tech-module-meta"><span>Familia</span><span>Acuerdos</span></div></article>
+          <article class="tech-module-card reveal"><div class="tech-visual-stage"><img src="assets/area-civil.jpg" alt="Consulta de derecho civil" loading="lazy" /><span class="tech-stage-badge">04</span></div><h3>Derecho Civil</h3><p>Bienes, obligaciones, contratos y conflictos que forman parte de la vida civil.</p><div class="tech-module-meta"><span>Bienes</span><span>Obligaciones</span></div></article>
+          <article class="tech-module-card reveal"><div class="tech-visual-stage"><img src="assets/area-labor.jpg" alt="Reunión de derecho laboral" loading="lazy" /><span class="tech-stage-badge">05</span></div><h3>Derecho Laboral</h3><p>Asesoramiento a trabajadores y empleadores sobre relaciones y obligaciones laborales.</p><div class="tech-module-meta"><span>Trabajo</span><span>Empleadores</span></div></article>
+          <article class="tech-module-card reveal"><div class="tech-visual-stage"><img src="assets/practice-succession.jpg" alt="Sala de reuniones" loading="lazy" /><span class="tech-stage-badge">06</span></div><h3>Sucesiones</h3><p>Apertura de sucesiones y trámites vinculados a la transmisión de bienes.</p><div class="tech-module-meta"><span>Herencias</span><span>Testamentos</span></div></article>
+          <article class="tech-module-card reveal"><div class="tech-visual-stage"><img src="assets/area-property.jpg" alt="Propiedad para trámite de compraventa" loading="lazy" /><span class="tech-stage-badge">07</span></div><h3>Trámites de compraventa</h3><p>Asesoramiento y documentación para operaciones de bienes inmuebles y vehículos.</p><div class="tech-module-meta"><span>Inmuebles</span><span>Vehículos</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="notarial">
+      <div class="container"><div class="split-band">
+        <div class="reveal"><span class="eyebrow-tag">Escribanía</span><h2 class="section-title">Certeza jurídica en cada documento</h2><p class="section-subtitle">Actos y documentos que requieren formalización, explicación clara y el respaldo de una escribanía.</p><ul class="check-list"><li>Compraventas y transferencias de inmuebles</li><li>Compraventas y transferencias de vehículos</li><li>Poderes, testamentos y trámites sucesorios</li><li>Certificados y certificaciones notariales</li></ul><a href="#contacto" class="btn-magnetic btn-glow" style="margin-top:2rem;">Consultar por escribanía</a></div>
+        <div class="band-photo reveal"><img src="assets/band-notarial.jpg" alt="Documentación notarial" loading="lazy" /></div>
+      </div></div>
+    </section>
+
+    <section class="section section-glass" id="empresas">
+      <div class="container">
+        <div class="split-band"><div class="band-photo reveal"><img src="assets/band-business.jpg" alt="Gestión de empresas" loading="lazy" /></div><div class="reveal"><span class="eyebrow-tag">Administración de Empresas</span><h2 class="section-title">Una estructura ordenada para crecer</h2><p class="section-subtitle">Abogados y escribanos trabajan de forma integrada para definir la estructura jurídica y tributaria de la empresa y acompañar su gestión.</p><ul class="check-list"><li>Asesoramiento para la apertura y definición de la forma jurídica y tributaria</li><li>Inscripción de unipersonales, sociedades de hecho, monotributo, IVA mínimo y SAS</li><li>Gestoría y declaraciones juradas ante DGI, BPS y MTSS</li><li>Contratos, altas, bajas, nóminas y liquidación de haberes</li><li>Contabilidad, liquidación mensual y anual de impuestos y boletos de pago</li></ul></div></div>
+        <div class="facts-row reveal" style="margin-top:4rem;"><div class="fact"><strong>01</strong><span>Apertura y forma jurídica</span></div><div class="fact"><strong>02</strong><span>Inscripción de empresa</span></div><div class="fact"><strong>03</strong><span>Gestoría y obligaciones</span></div><div class="fact"><strong>04</strong><span>Haberes e impuestos</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="estudio">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow-tag">El Estudio</span><h2 class="section-title">Una práctica que reúne especialidades</h2><p class="section-subtitle">BRANAVI integra asesoramiento jurídico, escribanía y administración de empresas para que cada consulta tenga una respuesta coordinada.</p></div>
+        <div class="studio-principles reveal"><article><span>01</span><h3>Escuchamos</h3><p>Partimos de la situación concreta para identificar qué consulta, trámite o actuación corresponde.</p></article><article><span>02</span><h3>Ordenamos</h3><p>Explicamos los pasos, la documentación necesaria y el alcance de cada gestión de forma clara.</p></article><article><span>03</span><h3>Acompañamos</h3><p>Coordinamos las especialidades jurídicas, notariales y empresariales durante todo el proceso.</p></article></div>
+      </div>
+    </section>
+
+    <section class="section section-glass" id="historia">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow-tag">Nuestra Historia</span><h2 class="section-title">Una empresa joven con una visión integral</h2><p class="section-subtitle">La propuesta de BRANAVI reúne especialidades jurídicas, notariales y empresariales para dar respuestas claras a cada consulta.</p></div>
+        <div class="timeline-steps reveal">
+          <article class="timeline-step-card"><span class="tl-year">Equipo</span><div class="tl-money">El pilar de nuestro éxito<small>Profesionales que combinan especialidades para acompañar cada situación con una visión integral.</small></div><span class="tl-goal-pill">Personas</span></article>
+          <article class="timeline-step-card"><span class="tl-year">Servicios</span><div class="tl-money">Excelencia y confianza en cada solución legal<small>Asesoría jurídica, escribanía y empresas reunidas para ofrecer respuestas claras y coordinadas.</small></div><span class="tl-goal-pill">Compromiso</span></article>
+          <article class="timeline-step-card peak-card"><span class="tl-year">Visión</span><div class="tl-money">BRANAVI revoluciona el sector con su visión<small>Una propuesta que conecta el respaldo profesional con la agilidad que necesitan personas y organizaciones.</small></div><span class="tl-goal-pill">BRANAVI</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:0 0 6rem;"><div class="container"><div class="sister-card reveal"><div><h3>¿Necesitás gestionar una cartera?</h3><p>La gestión de cobranzas, Contact Center y operaciones omnicanal se realiza a través de BRANAVI Connect.</p></div><a href="https://branaviconnect.com" target="_blank" rel="noopener" class="btn-magnetic btn-glass btn-xl">Conocer BRANAVI Connect</a></div></div></section>
+
+    <section class="section section-glass" id="contacto">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow-tag">Contacto Directo</span><h2 class="section-title">Cuéntenos su consulta</h2><p class="section-subtitle">Comparta su situación y un profesional del estudio se comunicará para orientar el siguiente paso.</p></div>
+        <div class="contact-dual-grid">
+          <div class="contact-card-left reveal"><h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:.5rem;">Estudio BRANAVI</h3><p style="color:var(--text-muted);font-size:.94rem;">Atención presencial en el Centro de Montevideo y asesoramiento a distancia.</p><div class="contact-list-items"><div class="c-row"><div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><div><strong>Dirección</strong><span>Convención 1343, esq. 18 de Julio, Piso 9<br />Montevideo, Uruguay</span></div></div><div class="c-row"><div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3"/></svg></div><div><strong>Teléfono</strong><a href="tel:29050510">2905 0510</a></div></div><div class="c-row"><div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-9 5.7a2 2 0 0 1-2 0L2 7"/></svg></div><div><strong>Email</strong><a href="mailto:info@estudiobranavi.com">info@estudiobranavi.com</a></div></div></div></div>
+          <div class="contact-card-right reveal"><form id="legalForm" class="modern-form-grid"><div class="field-box"><label for="lNombre">Nombre y Apellido *</label><input id="lNombre" type="text" placeholder="Su nombre completo" required /></div><div class="field-box"><label for="lTel">Teléfono / Celular *</label><input id="lTel" type="tel" placeholder="099 000 000" required /></div><div class="field-box span-2"><label for="lEmail">Correo Electrónico *</label><input id="lEmail" type="email" placeholder="correo@ejemplo.com" required /></div><div class="field-box span-2"><label for="lArea">Motivo de Consulta *</label><select id="lArea" required><option>Asesoría Jurídica</option><option>Testamentos y Herencias</option><option>Compraventa de Inmuebles</option><option>Compraventa de Vehículos</option><option>Contratos Matrimoniales</option><option>Divorcios</option><option>Certificados Notariales</option><option>Formación de Empresas</option><option>Administración de Empresas</option></select></div><div class="field-box span-2"><label for="lMensaje">Cuéntenos brevemente su situación *</label><textarea id="lMensaje" rows="4" placeholder="Describa su consulta..." required></textarea></div><div class="field-box span-2"><button type="submit" class="btn-magnetic btn-glow btn-xl" style="width:100%;">Enviar Consulta</button><p id="legalStatus" style="display:none;margin-top:.85rem;"></p></div></form></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-modern"><div class="container"><div class="footer-cols"><div><img src="assets/logo_branavi_blanco.png" alt="BRANAVI Estudio Jurídico" style="height:52px;width:auto;margin-bottom:1.1rem;" /><p style="color:var(--text-muted);font-size:.88rem;line-height:1.75;">Estudio Jurídico, Escribanía y Administración de Empresas en Montevideo.</p></div><div><h4>Servicios</h4><ul><li><a href="#servicios">Asesoría Jurídica</a></li><li><a href="#notarial">Escribanía</a></li><li><a href="#servicios">Sucesiones</a></li><li><a href="#empresas">Empresas</a></li></ul></div><div><h4>Áreas Legales</h4><ul><li><a href="#areas">Penal</a></li><li><a href="#areas">Comercial</a></li><li><a href="#areas">Familia y Civil</a></li><li><a href="#areas">Laboral</a></li></ul></div><div><h4>Contacto</h4><ul><li><a href="#contacto">Convención 1343, Piso 9</a></li><li><a href="tel:29050510">Tel: 2905 0510</a></li><li><a href="mailto:info@estudiobranavi.com">info@estudiobranavi.com</a></li><li><a href="https://branaviconnect.com" target="_blank" rel="noopener">BRANAVI Connect ↗</a></li></ul></div></div><div class="footer-copy"><span>© 2026 BRANAVI — Estudio Jurídico y Escribanía. Todos los derechos reservados.</span></div></div></footer>
+  <a href="tel:29050510" class="floating-action-hub" aria-label="Llamar a BRANAVI 2905 0510"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3"/></svg><span>2905 0510</span></a>
+  <script src="app.js"></script>
+</body>
+</html>

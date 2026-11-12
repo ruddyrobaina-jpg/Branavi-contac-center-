@@ -1795,3 +1795,147 @@ body {
   .brand-identity img { height: 46px; }
   .navbar.mobile-open .nav-menu { top: 96px; }
 }
+
+/* ==========================================================================
+   RESPONSIVE v2.2 — notebooks 13"-15", tablets, Android e iPhone
+   ========================================================================== */
+html, body { max-width: 100%; overflow-x: hidden; }
+img, svg, video, canvas { max-width: 100%; }
+
+/* Contenedor que se adapta: centrado y con margen proporcional */
+.container {
+  max-width: 1360px;
+  padding-left: clamp(1.25rem, 3.2vw, 3rem);
+  padding-right: clamp(1.25rem, 3.2vw, 3rem);
+}
+.hero-grid { width: 100%; }
+
+/* Notebooks (14"/15" con escala de Windows): menú compacto, nada se sale */
+@media (max-width: 1500px) {
+  .brand-tag { display: none; }
+  .nav-menu { gap: 1.35rem; }
+  .nav-menu a { font-size: 0.84rem; }
+  .btn-magnetic { padding: 0.65rem 1.1rem; font-size: 0.82rem; }
+}
+@media (max-width: 1320px) {
+  .nav-cta-group .btn-glass { display: none; }
+  .nav-menu { gap: 1.1rem; }
+}
+
+/* Menú hamburguesa desde tablet hacia abajo */
+@media (max-width: 1180px) {
+  .nav-menu { display: none; }
+  .mobile-toggle { display: inline-flex; margin-left: auto; }
+  .nav-cta-group { margin-left: 0; }
+  .navbar.mobile-open .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    background: rgba(2, 5, 14, 0.98);
+    padding: 0.75rem clamp(1.25rem, 3.2vw, 3rem) 1.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .navbar.mobile-open .nav-menu a {
+    width: 100%;
+    padding: 0.95rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .navbar.mobile-open .nav-menu a::after { display: none; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+  .hero-stage { padding: 4.5rem 0 4rem; }
+  .command-center-wrap { max-width: 640px; }
+  .counters-grid { grid-template-columns: repeat(3, 1fr); row-gap: 2rem; }
+  .counter-card { border-right: none; padding: 0 1rem; }
+  .counter-card:first-child { padding-left: 1rem; }
+}
+
+/* Celulares (Android / iPhone) */
+@media (max-width: 640px) {
+  .nav-inner { height: 76px; gap: 0.75rem; }
+  .brand-identity img { height: 42px; }
+  .navbar.mobile-open .nav-menu { max-height: calc(100vh - 80px); }
+  .nav-cta-group { display: none; }
+
+  .hero-stage { padding: 3rem 0 3rem; }
+  .hero-headline { font-size: 1.95rem; }
+  .hero-dynamic-slot { white-space: normal; min-height: 2.35em; }
+  .hero-description { font-size: 1rem; margin-bottom: 1.75rem; }
+  .hero-actions { flex-direction: column; gap: 0.75rem; }
+  .hero-actions .btn-magnetic { width: 100%; }
+  .hero-eyebrow-pill { font-size: 0.68rem; margin-bottom: 1.25rem; }
+
+  .command-center-card { padding: 1rem; }
+  .cc-top-bar img { height: 38px; }
+  .cc-status-label { font-size: 0.62rem; }
+  .cc-kpi-duo { grid-template-columns: 1fr; gap: 0.75rem; }
+  .cc-kpi-box { min-height: 0; }
+  .cc-kpi-box .num { font-size: 1.3rem; }
+  .cc-hud-bottom { height: 3rem; }
+
+  .counters-section { padding: 1rem 0 3.5rem; }
+  .counters-grid { grid-template-columns: 1fr 1fr; padding: 1.75rem 0; gap: 1.75rem 0.5rem; }
+  .counter-card { padding: 0 0.75rem; }
+  .counter-card:first-child { padding-left: 0.75rem; }
+  .counter-card:last-child { grid-column: span 2; }
+  .counter-value { font-size: 1.55rem; }
+
+  .section { padding: 4rem 0; }
+  .section-head { margin-bottom: 2.25rem; }
+  .section-title { font-size: 1.65rem; }
+  .section-subtitle { font-size: 0.97rem; }
+  .ecosystem-switcher { gap: 0.5rem; }
+  .eco-tab { padding: 0.6rem 1rem; font-size: 0.8rem; }
+
+  .tech-bento-grid, .cards-3d-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .tech-module-card { padding: 1.25rem; }
+  .tech-visual-stage { height: 150px; }
+  .tilt-card { padding: 1.5rem 1.35rem; }
+
+  .ai-engine-layout { padding: 1.1rem; gap: 1.5rem; }
+  .ai-console-card { padding: 1.15rem; }
+  .ai-feature-item { padding: 0.95rem; grid-template-columns: 36px 1fr; gap: 0.8rem; }
+  .ai-meter-label { font-size: 0.72rem; gap: 0.5rem; }
+
+  .results-grid { gap: 2rem; }
+  .timeline-step-card { grid-template-columns: 1fr auto; gap: 0.35rem 0.75rem; padding: 1rem; }
+  .timeline-step-card .tl-year { grid-column: 1 / -1; }
+  .chart-showcase-box { padding: 1rem; }
+
+  .gallery-main-viewport { min-height: 0; aspect-ratio: 4 / 3; }
+  .gallery-caption-bar { padding: 1rem; }
+  .gallery-caption-bar h3 { font-size: 1.05rem; }
+  .gallery-caption-bar p { display: none; }
+  .gallery-thumbs-stack { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; gap: 0.6rem; }
+  .gallery-thumb-item { height: 84px; }
+
+  .clients-wall { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 2.5rem; }
+  .client-tile { height: 80px; padding: 0.9rem; }
+  .testimonial-hero-card { padding: 1.5rem 1.15rem; gap: 1.5rem; text-align: left; }
+  .testi-quote { font-size: 0.97rem; }
+
+  .contact-dual-grid { gap: 1.5rem; }
+  .contact-card-left, .contact-card-right { padding: 1.5rem 1.15rem; }
+  .mode-pills { grid-template-columns: 1fr; }
+  .modern-form-grid { grid-template-columns: 1fr; }
+  .field-box.span-2 { grid-column: span 1; }
+  .field-box input, .field-box select, .field-box textarea { font-size: 16px; } /* evita el zoom automático de iPhone */
+
+  .footer-modern { padding: 3rem 0 6rem; }
+  .footer-cols { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-copy { flex-direction: column; align-items: flex-start; }
+  .floating-action-hub { bottom: 16px; right: 16px; padding: 0.7rem 1.1rem; }
+}
+
+/* Celulares muy chicos */
+@media (max-width: 380px) {
+  .hero-headline { font-size: 1.7rem; }
+  .brand-identity img { height: 38px; }
+}
